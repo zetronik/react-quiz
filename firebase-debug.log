@@ -1,0 +1,518 @@
+[debug] [2020-11-13T20:15:57.149Z] ----------------------------------------------------------------------
+[debug] [2020-11-13T20:15:57.153Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Admin\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2020-11-13T20:15:57.153Z] CLI Version:   8.16.2
+[debug] [2020-11-13T20:15:57.153Z] Platform:      win32
+[debug] [2020-11-13T20:15:57.153Z] Node Version:  v13.8.0
+[debug] [2020-11-13T20:15:57.155Z] Time:          Fri Nov 13 2020 22:15:57 GMT+0200 (за східноєвропейським стандартним часом)
+[debug] [2020-11-13T20:15:57.155Z] ----------------------------------------------------------------------
+[debug] [2020-11-13T20:15:57.156Z] 
+[debug] [2020-11-13T20:15:57.159Z] >>> [apiv2][query] GET https://firebase-public.firebaseio.com/cli.json [none]
+[debug] [2020-11-13T20:15:57.196Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2020-11-13T20:15:57.197Z] > authorizing via signed-in user
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  D:\project\react1\react-quiz
+
+[debug] [2020-11-13T20:15:57.705Z] <<< [apiv2][status] GET https://firebase-public.firebaseio.com/cli.json 200
+[debug] [2020-11-13T20:15:57.706Z] <<< [apiv2][body] GET https://firebase-public.firebaseio.com/cli.json {"cloudBuildErrorAfter":1594252800000,"cloudBuildWarnAfter":1590019200000,"defaultNode10After":1594252800000,"minVersion":"3.0.5","node8DeploysDisabledAfter":1613390400000,"node8RuntimeDisabledAfter":1615809600000,"node8WarnAfter":1600128000000}
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2020-11-13T20:16:34.867Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2020-11-13T20:16:34.868Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2020-11-13T20:16:35.029Z] <<< HTTP RESPONSE 400 {"date":"Fri, 13 Nov 2020 20:16:26 GMT","pragma":"no-cache","cache-control":"no-cache, no-store, max-age=0, must-revalidate","expires":"Mon, 01 Jan 1990 00:00:00 GMT","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-Q050=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2020-11-13T20:16:35.030Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects?pageSize=100  
+ 
+[debug] [2020-11-13T20:16:35.172Z] <<< HTTP RESPONSE 401 {"www-authenticate":"Bearer realm=\"https://accounts.google.com/\", error=\"invalid_token\"","vary":"X-Origin, Referer, Origin,Accept-Encoding","content-type":"application/json; charset=UTF-8","date":"Fri, 13 Nov 2020 20:16:26 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-Q050=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2020-11-13T20:16:35.173Z] <<< HTTP RESPONSE BODY {"error":{"code":401,"message":"Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.","status":"UNAUTHENTICATED"}}
+[debug] [2020-11-13T20:16:35.174Z] HTTP Error: 401, Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.
+[debug] [2020-11-13T20:16:35.297Z] FirebaseError: HTTP Error: 401, Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.
+    at module.exports (C:\Users\Admin\AppData\Roaming\npm\node_modules\firebase-tools\lib\responseToError.js:38:12)
+    at Request._callback (C:\Users\Admin\AppData\Roaming\npm\node_modules\firebase-tools\lib\api.js:41:35)
+    at Request.self.callback (C:\Users\Admin\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\request\request.js:185:22)
+    at Request.emit (events.js:321:20)
+    at Request.EventEmitter.emit (domain.js:485:12)
+    at Request.<anonymous> (C:\Users\Admin\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\request\request.js:1154:10)
+    at Request.emit (events.js:321:20)
+    at Request.EventEmitter.emit (domain.js:485:12)
+    at IncomingMessage.<anonymous> (C:\Users\Admin\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\request\request.js:1076:12)
+    at Object.onceWrapper (events.js:427:28)
+    at IncomingMessage.emit (events.js:333:22)
+    at IncomingMessage.EventEmitter.emit (domain.js:485:12)
+    at endReadableNT (_stream_readable.js:1201:12)
+    at processTicksAndRejections (internal/process/task_queues.js:84:21)
+[error] 
+[error] Error: Failed to list Firebase projects. See firebase-debug.log for more info.
+[debug] [2020-11-13T20:16:44.200Z] ----------------------------------------------------------------------
+[debug] [2020-11-13T20:16:44.203Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Admin\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2020-11-13T20:16:44.204Z] CLI Version:   8.16.2
+[debug] [2020-11-13T20:16:44.204Z] Platform:      win32
+[debug] [2020-11-13T20:16:44.204Z] Node Version:  v13.8.0
+[debug] [2020-11-13T20:16:44.207Z] Time:          Fri Nov 13 2020 22:16:44 GMT+0200 (за східноєвропейським стандартним часом)
+[debug] [2020-11-13T20:16:44.207Z] ----------------------------------------------------------------------
+[debug] [2020-11-13T20:16:44.207Z] 
+[debug] [2020-11-13T20:16:44.216Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2020-11-13T20:16:44.216Z] > authorizing via signed-in user
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  D:\project\react1\react-quiz
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[info] 
+=== Hosting Setup
+[info] 
+[info] Your public directory is the folder (relative to your project directory) that
+[info] will contain Hosting assets to be uploaded with firebase deploy. If you
+[info] have a build process for your assets, use your build's output directory.
+[info] 
+[debug] [2020-11-13T20:17:35.614Z] ----------------------------------------------------------------------
+[debug] [2020-11-13T20:17:35.617Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Admin\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2020-11-13T20:17:35.618Z] CLI Version:   8.16.2
+[debug] [2020-11-13T20:17:35.618Z] Platform:      win32
+[debug] [2020-11-13T20:17:35.618Z] Node Version:  v13.8.0
+[debug] [2020-11-13T20:17:35.619Z] Time:          Fri Nov 13 2020 22:17:35 GMT+0200 (за східноєвропейським стандартним часом)
+[debug] [2020-11-13T20:17:35.620Z] ----------------------------------------------------------------------
+[debug] [2020-11-13T20:17:35.620Z] 
+[debug] [2020-11-13T20:17:35.628Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2020-11-13T20:17:35.628Z] > authorizing via signed-in user
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  D:\project\react1\react-quiz
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2020-11-13T20:17:41.086Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2020-11-13T20:17:41.087Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2020-11-13T20:17:41.276Z] <<< HTTP RESPONSE 400 {"date":"Fri, 13 Nov 2020 20:17:32 GMT","expires":"Mon, 01 Jan 1990 00:00:00 GMT","cache-control":"no-cache, no-store, max-age=0, must-revalidate","pragma":"no-cache","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-Q050=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2020-11-13T20:17:41.277Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects?pageSize=100  
+ 
+[debug] [2020-11-13T20:17:41.453Z] <<< HTTP RESPONSE 401 {"www-authenticate":"Bearer realm=\"https://accounts.google.com/\", error=\"invalid_token\"","vary":"X-Origin, Referer, Origin,Accept-Encoding","content-type":"application/json; charset=UTF-8","date":"Fri, 13 Nov 2020 20:17:32 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-Q050=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2020-11-13T20:17:41.453Z] <<< HTTP RESPONSE BODY {"error":{"code":401,"message":"Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.","status":"UNAUTHENTICATED"}}
+[debug] [2020-11-13T20:17:41.454Z] HTTP Error: 401, Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.
+[debug] [2020-11-13T20:17:41.573Z] FirebaseError: HTTP Error: 401, Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.
+    at module.exports (C:\Users\Admin\AppData\Roaming\npm\node_modules\firebase-tools\lib\responseToError.js:38:12)
+    at Request._callback (C:\Users\Admin\AppData\Roaming\npm\node_modules\firebase-tools\lib\api.js:41:35)
+    at Request.self.callback (C:\Users\Admin\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\request\request.js:185:22)
+    at Request.emit (events.js:321:20)
+    at Request.EventEmitter.emit (domain.js:485:12)
+    at Request.<anonymous> (C:\Users\Admin\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\request\request.js:1154:10)
+    at Request.emit (events.js:321:20)
+    at Request.EventEmitter.emit (domain.js:485:12)
+    at IncomingMessage.<anonymous> (C:\Users\Admin\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\request\request.js:1076:12)
+    at Object.onceWrapper (events.js:427:28)
+    at IncomingMessage.emit (events.js:333:22)
+    at IncomingMessage.EventEmitter.emit (domain.js:485:12)
+    at endReadableNT (_stream_readable.js:1201:12)
+    at processTicksAndRejections (internal/process/task_queues.js:84:21)
+[error] 
+[error] Error: Failed to list Firebase projects. See firebase-debug.log for more info.
+[debug] [2020-11-13T20:18:19.323Z] ----------------------------------------------------------------------
+[debug] [2020-11-13T20:18:19.326Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Admin\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2020-11-13T20:18:19.327Z] CLI Version:   8.16.2
+[debug] [2020-11-13T20:18:19.327Z] Platform:      win32
+[debug] [2020-11-13T20:18:19.327Z] Node Version:  v13.8.0
+[debug] [2020-11-13T20:18:19.328Z] Time:          Fri Nov 13 2020 22:18:19 GMT+0200 (за східноєвропейським стандартним часом)
+[debug] [2020-11-13T20:18:19.329Z] ----------------------------------------------------------------------
+[debug] [2020-11-13T20:18:19.329Z] 
+[debug] [2020-11-13T20:18:19.338Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2020-11-13T20:18:19.339Z] > authorizing via signed-in user
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  D:\project\react1\react-quiz
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2020-11-13T20:18:25.017Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2020-11-13T20:18:25.018Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2020-11-13T20:18:25.213Z] <<< HTTP RESPONSE 400 {"date":"Fri, 13 Nov 2020 20:18:16 GMT","cache-control":"no-cache, no-store, max-age=0, must-revalidate","pragma":"no-cache","expires":"Mon, 01 Jan 1990 00:00:00 GMT","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-Q050=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2020-11-13T20:18:25.215Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects?pageSize=100  
+ 
+[debug] [2020-11-13T20:18:25.350Z] <<< HTTP RESPONSE 401 {"www-authenticate":"Bearer realm=\"https://accounts.google.com/\", error=\"invalid_token\"","vary":"X-Origin, Referer, Origin,Accept-Encoding","content-type":"application/json; charset=UTF-8","date":"Fri, 13 Nov 2020 20:18:16 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-Q050=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2020-11-13T20:18:25.351Z] <<< HTTP RESPONSE BODY {"error":{"code":401,"message":"Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.","status":"UNAUTHENTICATED"}}
+[debug] [2020-11-13T20:18:25.352Z] HTTP Error: 401, Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.
+[debug] [2020-11-13T20:18:25.486Z] FirebaseError: HTTP Error: 401, Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.
+    at module.exports (C:\Users\Admin\AppData\Roaming\npm\node_modules\firebase-tools\lib\responseToError.js:38:12)
+    at Request._callback (C:\Users\Admin\AppData\Roaming\npm\node_modules\firebase-tools\lib\api.js:41:35)
+    at Request.self.callback (C:\Users\Admin\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\request\request.js:185:22)
+    at Request.emit (events.js:321:20)
+    at Request.EventEmitter.emit (domain.js:485:12)
+    at Request.<anonymous> (C:\Users\Admin\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\request\request.js:1154:10)
+    at Request.emit (events.js:321:20)
+    at Request.EventEmitter.emit (domain.js:485:12)
+    at IncomingMessage.<anonymous> (C:\Users\Admin\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\request\request.js:1076:12)
+    at Object.onceWrapper (events.js:427:28)
+    at IncomingMessage.emit (events.js:333:22)
+    at IncomingMessage.EventEmitter.emit (domain.js:485:12)
+    at endReadableNT (_stream_readable.js:1201:12)
+    at processTicksAndRejections (internal/process/task_queues.js:84:21)
+[error] 
+[error] Error: Failed to list Firebase projects. See firebase-debug.log for more info.
+[debug] [2020-11-13T20:18:31.853Z] ----------------------------------------------------------------------
+[debug] [2020-11-13T20:18:31.856Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Admin\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2020-11-13T20:18:31.857Z] CLI Version:   8.16.2
+[debug] [2020-11-13T20:18:31.857Z] Platform:      win32
+[debug] [2020-11-13T20:18:31.857Z] Node Version:  v13.8.0
+[debug] [2020-11-13T20:18:31.859Z] Time:          Fri Nov 13 2020 22:18:31 GMT+0200 (за східноєвропейським стандартним часом)
+[debug] [2020-11-13T20:18:31.859Z] ----------------------------------------------------------------------
+[debug] [2020-11-13T20:18:31.860Z] 
+[debug] [2020-11-13T20:18:31.868Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2020-11-13T20:18:31.869Z] > authorizing via signed-in user
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  D:\project\react1\react-quiz
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[info] i  If you want to create a project in a Google Cloud organization or folder, please use "firebase projects:create" instead, and return to this command when you've created the project. 
+[debug] [2021-01-10T11:37:27.502Z] ----------------------------------------------------------------------
+[debug] [2021-01-10T11:37:27.506Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\zetro\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2021-01-10T11:37:27.506Z] CLI Version:   9.1.0
+[debug] [2021-01-10T11:37:27.507Z] Platform:      win32
+[debug] [2021-01-10T11:37:27.507Z] Node Version:  v15.2.1
+[debug] [2021-01-10T11:37:27.512Z] Time:          Sun Jan 10 2021 13:37:27 GMT+0200 (Восточная Европа, стандартное время)
+[debug] [2021-01-10T11:37:27.513Z] ----------------------------------------------------------------------
+[debug] [2021-01-10T11:37:27.513Z] 
+[debug] [2021-01-10T11:37:27.517Z] >>> [apiv2][query] GET https://firebase-public.firebaseio.com/cli.json [none]
+[error] 
+[error] Error: Not in a Firebase app directory (could not locate firebase.json)
+[debug] [2021-01-10T11:37:27.980Z] Error: EPERM: operation not permitted, unlink 'D:\project\react1\react-quiz\firebase-debug.log'
+    at Object.unlinkSync (node:fs:1225:3)
+    at process.<anonymous> (C:\Users\zetro\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js:89:12)
+    at process.emit (node:events:341:22)
+    at process.exit (node:internal/process/per_thread:174:15)
+    at Timeout._onTimeout (C:\Users\zetro\AppData\Roaming\npm\node_modules\firebase-tools\lib\errorOut.js:20:17)
+    at listOnTimeout (node:internal/timers:556:17)
+    at processTimers (node:internal/timers:499:7)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2021-01-10T11:39:28.247Z] ----------------------------------------------------------------------
+[debug] [2021-01-10T11:39:28.250Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\zetro\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js login
+[debug] [2021-01-10T11:39:28.251Z] CLI Version:   9.1.2
+[debug] [2021-01-10T11:39:28.251Z] Platform:      win32
+[debug] [2021-01-10T11:39:28.251Z] Node Version:  v15.2.1
+[debug] [2021-01-10T11:39:28.253Z] Time:          Sun Jan 10 2021 13:39:28 GMT+0200 (Восточная Европа, стандартное время)
+[debug] [2021-01-10T11:39:28.253Z] ----------------------------------------------------------------------
+[debug] [2021-01-10T11:39:28.254Z] 
+[debug] [2021-01-10T11:39:28.261Z] >>> [apiv2][query] GET https://firebase-public.firebaseio.com/cli.json [none]
+[info] Already logged in as zetronik@gmail.com
+[debug] [2021-01-10T11:39:28.459Z] Error: EPERM: operation not permitted, unlink 'D:\project\react1\react-quiz\firebase-debug.log'
+    at Object.unlinkSync (node:fs:1225:3)
+    at process.<anonymous> (C:\Users\zetro\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js:89:12)
+    at process.emit (node:events:341:22)
+    at process.exit (node:internal/process/per_thread:174:15)
+    at C:\Users\zetro\AppData\Roaming\npm\node_modules\firebase-tools\lib\command.js:81:74
+    at processTicksAndRejections (node:internal/process/task_queues:93:5)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2021-01-10T11:39:42.042Z] ----------------------------------------------------------------------
+[debug] [2021-01-10T11:39:42.045Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\zetro\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js login
+[debug] [2021-01-10T11:39:42.046Z] CLI Version:   9.1.2
+[debug] [2021-01-10T11:39:42.046Z] Platform:      win32
+[debug] [2021-01-10T11:39:42.046Z] Node Version:  v15.2.1
+[debug] [2021-01-10T11:39:42.048Z] Time:          Sun Jan 10 2021 13:39:42 GMT+0200 (Восточная Европа, стандартное время)
+[debug] [2021-01-10T11:39:42.048Z] ----------------------------------------------------------------------
+[debug] [2021-01-10T11:39:42.048Z] 
+[debug] [2021-01-10T11:39:42.052Z] >>> [apiv2][query] GET https://firebase-public.firebaseio.com/cli.json [none]
+[info] Already logged in as zetronik@gmail.com
+[debug] [2021-01-10T11:39:42.239Z] Error: EPERM: operation not permitted, unlink 'D:\project\react1\react-quiz\firebase-debug.log'
+    at Object.unlinkSync (node:fs:1225:3)
+    at process.<anonymous> (C:\Users\zetro\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js:89:12)
+    at process.emit (node:events:341:22)
+    at process.exit (node:internal/process/per_thread:174:15)
+    at C:\Users\zetro\AppData\Roaming\npm\node_modules\firebase-tools\lib\command.js:81:74
+    at processTicksAndRejections (node:internal/process/task_queues:93:5)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2021-01-10T11:40:06.509Z] ----------------------------------------------------------------------
+[debug] [2021-01-10T11:40:06.513Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\zetro\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2021-01-10T11:40:06.513Z] CLI Version:   9.1.2
+[debug] [2021-01-10T11:40:06.514Z] Platform:      win32
+[debug] [2021-01-10T11:40:06.514Z] Node Version:  v15.2.1
+[debug] [2021-01-10T11:40:06.515Z] Time:          Sun Jan 10 2021 13:40:06 GMT+0200 (Восточная Европа, стандартное время)
+[debug] [2021-01-10T11:40:06.516Z] ----------------------------------------------------------------------
+[debug] [2021-01-10T11:40:06.516Z] 
+[debug] [2021-01-10T11:40:06.519Z] >>> [apiv2][query] GET https://firebase-public.firebaseio.com/cli.json [none]
+[debug] [2021-01-10T11:40:06.554Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2021-01-10T11:40:06.555Z] > authorizing via signed-in user
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  D:\project\react1\react-quiz
+
+[debug] [2021-01-10T11:40:07.078Z] <<< [apiv2][status] GET https://firebase-public.firebaseio.com/cli.json 200
+[debug] [2021-01-10T11:40:07.078Z] <<< [apiv2][body] GET https://firebase-public.firebaseio.com/cli.json {"cloudBuildErrorAfter":1594252800000,"cloudBuildWarnAfter":1590019200000,"defaultNode10After":1594252800000,"minVersion":"3.0.5","node8DeploysDisabledAfter":1613390400000,"node8RuntimeDisabledAfter":1615809600000,"node8WarnAfter":1600128000000}
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2021-01-10T11:40:20.292Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2021-01-10T11:40:20.293Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2021-01-10T11:40:20.446Z] <<< HTTP RESPONSE 200 {"cache-control":"no-cache, no-store, max-age=0, must-revalidate","date":"Sun, 10 Jan 2021 11:40:16 GMT","pragma":"no-cache","expires":"Mon, 01 Jan 1990 00:00:00 GMT","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-01-10T11:40:20.453Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects?pageSize=100  
+ 
+[debug] [2021-01-10T11:40:20.945Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Sun, 10 Jan 2021 11:40:16 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[info] i  Using project react-quiz-ua (react-quiz-ua) 
+[info] 
+=== Hosting Setup
+[info] 
+[info] Your public directory is the folder (relative to your project directory) that
+[info] will contain Hosting assets to be uploaded with firebase deploy. If you
+[info] have a build process for your assets, use your build's output directory.
+[info] 
+[debug] [2021-01-10T11:47:16.978Z] >>> [apiv2][query] GET https://www.gstatic.com/firebasejs/releases.json [none]
+[debug] [2021-01-10T11:47:17.086Z] <<< [apiv2][status] GET https://www.gstatic.com/firebasejs/releases.json 200
+[debug] [2021-01-10T11:47:17.086Z] <<< [apiv2][body] GET https://www.gstatic.com/firebasejs/releases.json {"current":{"version":"8.2.2","browserURL":"https://www.gstatic.com/firebasejs/8.2.2/firebase.js","packageURL":"https://www.gstatic.com/firebasejs/8.2.2/firebase.tgz"},"live":{"version":"8.2","browserURL":"https://www.gstatic.com/firebasejs/live/8.2/firebase.js","packageURL":"https://www.gstatic.com/firebasejs/live/8.2/firebase.tgz"},"components":{"analytics":"https://www.gstatic.com/firebasejs/8.2.2/firebase-analytics.js","app":"https://www.gstatic.com/firebasejs/8.2.2/firebase-app.js","auth":"https://www.gstatic.com/firebasejs/8.2.2/firebase-auth.js","database":"https://www.gstatic.com/firebasejs/8.2.2/firebase-database.js","firestore":"https://www.gstatic.com/firebasejs/8.2.2/firebase-firestore.js","functions":"https://www.gstatic.com/firebasejs/8.2.2/firebase-functions.js","installations":"https://www.gstatic.com/firebasejs/8.2.2/firebase-installations.js","messaging":"https://www.gstatic.com/firebasejs/8.2.2/firebase-messaging.js","storage":"https://www.gstatic.com/firebasejs/8.2.2/firebase-storage.js","performance":"https://www.gstatic.com/firebasejs/8.2.2/firebase-performance.js","remote-config":"https://www.gstatic.com/firebasejs/8.2.2/firebase-remote-config.js","firestore.memory":"https://www.gstatic.com/firebasejs/8.2.2/firebase-firestore.memory.js"}}
+[info] i  Skipping write of build/index.html 
+[info] 
+[info] i  Writing configuration info to firebase.json... 
+[info] i  Writing project information to .firebaserc... 
+[info] 
+[info] +  Firebase initialization complete! 
+[debug] [2021-01-10T11:47:20.593Z] Error: EPERM: operation not permitted, unlink 'D:\project\react1\react-quiz\firebase-debug.log'
+    at Object.unlinkSync (node:fs:1225:3)
+    at process.<anonymous> (C:\Users\zetro\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js:89:12)
+    at process.emit (node:events:341:22)
+    at processEmit [as emit] (C:\Users\zetro\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\signal-exit\index.js:155:35)
+    at process.exit (node:internal/process/per_thread:174:15)
+    at C:\Users\zetro\AppData\Roaming\npm\node_modules\firebase-tools\lib\command.js:81:74
+    at processTicksAndRejections (node:internal/process/task_queues:93:5)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2021-01-10T11:49:25.814Z] ----------------------------------------------------------------------
+[debug] [2021-01-10T11:49:25.817Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\zetro\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2021-01-10T11:49:25.818Z] CLI Version:   9.1.2
+[debug] [2021-01-10T11:49:25.818Z] Platform:      win32
+[debug] [2021-01-10T11:49:25.818Z] Node Version:  v15.2.1
+[debug] [2021-01-10T11:49:25.820Z] Time:          Sun Jan 10 2021 13:49:25 GMT+0200 (Восточная Европа, стандартное время)
+[debug] [2021-01-10T11:49:25.820Z] ----------------------------------------------------------------------
+[debug] [2021-01-10T11:49:25.821Z] 
+[debug] [2021-01-10T11:49:25.832Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2021-01-10T11:49:25.833Z] > authorizing via signed-in user
+[debug] [2021-01-10T11:49:25.834Z] [iam] checking project react-quiz-ua for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2021-01-10T11:49:25.838Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/react-quiz-ua:testIamPermissions  
+ {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2021-01-10T11:49:26.762Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Sun, 10 Jan 2021 11:49:22 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","server-timing":"gfet4t7; dur=745","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-01-10T11:49:26.764Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/react-quiz-ua  
+ 
+[debug] [2021-01-10T11:49:27.048Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Sun, 10 Jan 2021 11:49:22 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[info] 
+[info] === Deploying to 'react-quiz-ua'...
+[info] 
+[info] i  deploying hosting 
+[debug] [2021-01-10T11:49:27.055Z] >>> HTTP REQUEST POST https://firebasehosting.googleapis.com/v1beta1/sites/react-quiz-ua/versions  
+ {"config":{"rewrites":[{"glob":"**","path":"/index.html"}]},"labels":{"deployment-tool":"cli-firebase"}}
+[debug] [2021-01-10T11:49:29.058Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Sun, 10 Jan 2021 11:49:24 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[info] i  hosting[react-quiz-ua]: beginning deploy... 
+[info] i  hosting[react-quiz-ua]: found 18 files in build 
+[debug] [2021-01-10T11:49:29.077Z] [hosting] hash cache [YnVpbGQ] not populated
+[debug] [2021-01-10T11:49:29.245Z] > refreshing access token with scopes: []
+[debug] [2021-01-10T11:49:29.246Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2021-01-10T11:49:29.250Z] [hosting] hash cache [YnVpbGQ] stored for 18 files
+[debug] [2021-01-10T11:49:29.250Z] [hosting][hash queue][FINAL] {"max":160,"min":21,"avg":31.11111111111111,"active":0,"complete":18,"success":18,"errored":0,"retried":0,"total":18,"elapsed":173}
+[debug] [2021-01-10T11:49:29.405Z] <<< HTTP RESPONSE 200 {"pragma":"no-cache","date":"Sun, 10 Jan 2021 11:49:25 GMT","expires":"Mon, 01 Jan 1990 00:00:00 GMT","cache-control":"no-cache, no-store, max-age=0, must-revalidate","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-01-10T11:49:29.413Z] >>> [apiv2][query] POST https://firebasehosting.googleapis.com/v1beta1/sites/react-quiz-ua/versions/ea69a601664f0f92:populateFiles [none]
+[debug] [2021-01-10T11:49:29.413Z] >>> [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/sites/react-quiz-ua/versions/ea69a601664f0f92:populateFiles {"files":{"/asset-manifest.json":"2102e5fb8358ae62f194fde65ee9722cde2e52a9fea8ae8e259c7a0523c96980","/index.html":"2b6e3fa121eb137bca27e6e91888b7d6bd2cee00b32586ef1366abc0fa99b747","/favicon.ico":"d96ddbc4933b04e12c738ab39f469573143949ca2c39eda0a49d16f83d40c319","/logo192.png":"3ee59515172ee198f3be375979df15ac5345183e656720a381b8872b2a39dc8b","/manifest.json":"aff3449bdc238776f5d6d967f19ec491b36aed5fb7f23ccff6500736fd58494a","/precache-manifest.e1db24a716af25ace9a3bb8422e871c6.js":"a7c799045f3ee2c65f7e63b54775b451811bd1805dcf54c03bf94d8b7f10b3bc","/robots.txt":"bfe106a3fb878dc83461c86818bf74fc1bdc7f28538ba613cd3e775516ce8b49","/service-worker.js":"2f2a55efe81aed0236d4b20411b80353ac75fcf600f759f11c33f9dda78df462","/logo512.png":"ee7e2f3fdb8209c4b6fd7bef6ba50d1b9dba30a25bb5c3126df057e1cb6f5331","/static/css/main.8c8a19e9.chunk.css":"a46954aa14a65ba47ed46cdbbfd5379c630401d96d534a2fa2f891badbc24198","/static/css/main.8c8a19e9.chunk.css.map":"1dac6f3bc3e96d48829a70ab437fad770e1e3c4a272d1ba88730faacca864b45","/static/js/2.e91ccc4c.chunk.js.LICENSE.txt":"dc28cd5af45e87b7317a1f2eb934e54b90f40095add78dfd75920525ff7576e6","/static/js/runtime-main.50b5716e.js":"bba62c5d2d97e5adf9ac4ca22bec585d19232118c8974150a0408ffa3a0165fa","/static/js/runtime-main.50b5716e.js.map":"e74b7d69e1bd7e0c6ad79c26aa209d81a6213d8092cc8c8c4027adfb51080977","/static/js/main.47ae3013.chunk.js":"2a5b25c878c7a5ac1ad4f989532c43e513c8c59787113133aee1f4e60221625b","/static/js/main.47ae3013.chunk.js.map":"462ebc8aa2923782927af7d0230169a4f89c9ad417ffa351ead069e50a985782","/static/js/2.e91ccc4c.chunk.js":"caebf00168cdb35b55fecb159f25f1fa30e558dbd9bbc01b77367c9b399788c0","/static/js/2.e91ccc4c.chunk.js.map":"5a3c812de1329bdf391040ce0572d285abc5d55f63f31f4510cbb76893b34ef6"}}
+[debug] [2021-01-10T11:49:30.537Z] <<< [apiv2][status] POST https://firebasehosting.googleapis.com/v1beta1/sites/react-quiz-ua/versions/ea69a601664f0f92:populateFiles 200
+[debug] [2021-01-10T11:49:30.538Z] <<< [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/sites/react-quiz-ua/versions/ea69a601664f0f92:populateFiles {"uploadRequiredHashes":["bba62c5d2d97e5adf9ac4ca22bec585d19232118c8974150a0408ffa3a0165fa","caebf00168cdb35b55fecb159f25f1fa30e558dbd9bbc01b77367c9b399788c0","a7c799045f3ee2c65f7e63b54775b451811bd1805dcf54c03bf94d8b7f10b3bc","a46954aa14a65ba47ed46cdbbfd5379c630401d96d534a2fa2f891badbc24198","bfe106a3fb878dc83461c86818bf74fc1bdc7f28538ba613cd3e775516ce8b49","ee7e2f3fdb8209c4b6fd7bef6ba50d1b9dba30a25bb5c3126df057e1cb6f5331","2102e5fb8358ae62f194fde65ee9722cde2e52a9fea8ae8e259c7a0523c96980","462ebc8aa2923782927af7d0230169a4f89c9ad417ffa351ead069e50a985782","2a5b25c878c7a5ac1ad4f989532c43e513c8c59787113133aee1f4e60221625b","e74b7d69e1bd7e0c6ad79c26aa209d81a6213d8092cc8c8c4027adfb51080977","5a3c812de1329bdf391040ce0572d285abc5d55f63f31f4510cbb76893b34ef6","2b6e3fa121eb137bca27e6e91888b7d6bd2cee00b32586ef1366abc0fa99b747","2f2a55efe81aed0236d4b20411b80353ac75fcf600f759f11c33f9dda78df462","aff3449bdc238776f5d6d967f19ec491b36aed5fb7f23ccff6500736fd58494a","3ee59515172ee198f3be375979df15ac5345183e656720a381b8872b2a39dc8b","dc28cd5af45e87b7317a1f2eb934e54b90f40095add78dfd75920525ff7576e6","d96ddbc4933b04e12c738ab39f469573143949ca2c39eda0a49d16f83d40c319","1dac6f3bc3e96d48829a70ab437fad770e1e3c4a272d1ba88730faacca864b45"],"uploadUrl":"https://upload-firebasehosting.googleapis.com/upload/sites/react-quiz-ua/versions/ea69a601664f0f92/files"}
+[debug] [2021-01-10T11:49:30.543Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/react-quiz-ua/versions/ea69a601664f0f92/files/bba62c5d2d97e5adf9ac4ca22bec585d19232118c8974150a0408ffa3a0165fa [none]
+[debug] [2021-01-10T11:49:30.543Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/react-quiz-ua/versions/ea69a601664f0f92/files/bba62c5d2d97e5adf9ac4ca22bec585d19232118c8974150a0408ffa3a0165fa [stream]
+[debug] [2021-01-10T11:49:30.545Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/react-quiz-ua/versions/ea69a601664f0f92/files/caebf00168cdb35b55fecb159f25f1fa30e558dbd9bbc01b77367c9b399788c0 [none]
+[debug] [2021-01-10T11:49:30.545Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/react-quiz-ua/versions/ea69a601664f0f92/files/caebf00168cdb35b55fecb159f25f1fa30e558dbd9bbc01b77367c9b399788c0 [stream]
+[debug] [2021-01-10T11:49:30.547Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/react-quiz-ua/versions/ea69a601664f0f92/files/a7c799045f3ee2c65f7e63b54775b451811bd1805dcf54c03bf94d8b7f10b3bc [none]
+[debug] [2021-01-10T11:49:30.547Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/react-quiz-ua/versions/ea69a601664f0f92/files/a7c799045f3ee2c65f7e63b54775b451811bd1805dcf54c03bf94d8b7f10b3bc [stream]
+[debug] [2021-01-10T11:49:30.548Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/react-quiz-ua/versions/ea69a601664f0f92/files/a46954aa14a65ba47ed46cdbbfd5379c630401d96d534a2fa2f891badbc24198 [none]
+[debug] [2021-01-10T11:49:30.548Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/react-quiz-ua/versions/ea69a601664f0f92/files/a46954aa14a65ba47ed46cdbbfd5379c630401d96d534a2fa2f891badbc24198 [stream]
+[debug] [2021-01-10T11:49:30.549Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/react-quiz-ua/versions/ea69a601664f0f92/files/bfe106a3fb878dc83461c86818bf74fc1bdc7f28538ba613cd3e775516ce8b49 [none]
+[debug] [2021-01-10T11:49:30.549Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/react-quiz-ua/versions/ea69a601664f0f92/files/bfe106a3fb878dc83461c86818bf74fc1bdc7f28538ba613cd3e775516ce8b49 [stream]
+[debug] [2021-01-10T11:49:30.550Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/react-quiz-ua/versions/ea69a601664f0f92/files/ee7e2f3fdb8209c4b6fd7bef6ba50d1b9dba30a25bb5c3126df057e1cb6f5331 [none]
+[debug] [2021-01-10T11:49:30.550Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/react-quiz-ua/versions/ea69a601664f0f92/files/ee7e2f3fdb8209c4b6fd7bef6ba50d1b9dba30a25bb5c3126df057e1cb6f5331 [stream]
+[debug] [2021-01-10T11:49:30.551Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/react-quiz-ua/versions/ea69a601664f0f92/files/2102e5fb8358ae62f194fde65ee9722cde2e52a9fea8ae8e259c7a0523c96980 [none]
+[debug] [2021-01-10T11:49:30.551Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/react-quiz-ua/versions/ea69a601664f0f92/files/2102e5fb8358ae62f194fde65ee9722cde2e52a9fea8ae8e259c7a0523c96980 [stream]
+[debug] [2021-01-10T11:49:30.552Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/react-quiz-ua/versions/ea69a601664f0f92/files/462ebc8aa2923782927af7d0230169a4f89c9ad417ffa351ead069e50a985782 [none]
+[debug] [2021-01-10T11:49:30.552Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/react-quiz-ua/versions/ea69a601664f0f92/files/462ebc8aa2923782927af7d0230169a4f89c9ad417ffa351ead069e50a985782 [stream]
+[debug] [2021-01-10T11:49:30.553Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/react-quiz-ua/versions/ea69a601664f0f92/files/2a5b25c878c7a5ac1ad4f989532c43e513c8c59787113133aee1f4e60221625b [none]
+[debug] [2021-01-10T11:49:30.553Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/react-quiz-ua/versions/ea69a601664f0f92/files/2a5b25c878c7a5ac1ad4f989532c43e513c8c59787113133aee1f4e60221625b [stream]
+[debug] [2021-01-10T11:49:30.554Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/react-quiz-ua/versions/ea69a601664f0f92/files/e74b7d69e1bd7e0c6ad79c26aa209d81a6213d8092cc8c8c4027adfb51080977 [none]
+[debug] [2021-01-10T11:49:30.554Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/react-quiz-ua/versions/ea69a601664f0f92/files/e74b7d69e1bd7e0c6ad79c26aa209d81a6213d8092cc8c8c4027adfb51080977 [stream]
+[debug] [2021-01-10T11:49:30.555Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/react-quiz-ua/versions/ea69a601664f0f92/files/5a3c812de1329bdf391040ce0572d285abc5d55f63f31f4510cbb76893b34ef6 [none]
+[debug] [2021-01-10T11:49:30.555Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/react-quiz-ua/versions/ea69a601664f0f92/files/5a3c812de1329bdf391040ce0572d285abc5d55f63f31f4510cbb76893b34ef6 [stream]
+[debug] [2021-01-10T11:49:30.556Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/react-quiz-ua/versions/ea69a601664f0f92/files/2b6e3fa121eb137bca27e6e91888b7d6bd2cee00b32586ef1366abc0fa99b747 [none]
+[debug] [2021-01-10T11:49:30.556Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/react-quiz-ua/versions/ea69a601664f0f92/files/2b6e3fa121eb137bca27e6e91888b7d6bd2cee00b32586ef1366abc0fa99b747 [stream]
+[debug] [2021-01-10T11:49:30.558Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/react-quiz-ua/versions/ea69a601664f0f92/files/2f2a55efe81aed0236d4b20411b80353ac75fcf600f759f11c33f9dda78df462 [none]
+[debug] [2021-01-10T11:49:30.558Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/react-quiz-ua/versions/ea69a601664f0f92/files/2f2a55efe81aed0236d4b20411b80353ac75fcf600f759f11c33f9dda78df462 [stream]
+[debug] [2021-01-10T11:49:30.562Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/react-quiz-ua/versions/ea69a601664f0f92/files/aff3449bdc238776f5d6d967f19ec491b36aed5fb7f23ccff6500736fd58494a [none]
+[debug] [2021-01-10T11:49:30.563Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/react-quiz-ua/versions/ea69a601664f0f92/files/aff3449bdc238776f5d6d967f19ec491b36aed5fb7f23ccff6500736fd58494a [stream]
+[debug] [2021-01-10T11:49:30.564Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/react-quiz-ua/versions/ea69a601664f0f92/files/3ee59515172ee198f3be375979df15ac5345183e656720a381b8872b2a39dc8b [none]
+[debug] [2021-01-10T11:49:30.564Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/react-quiz-ua/versions/ea69a601664f0f92/files/3ee59515172ee198f3be375979df15ac5345183e656720a381b8872b2a39dc8b [stream]
+[debug] [2021-01-10T11:49:30.565Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/react-quiz-ua/versions/ea69a601664f0f92/files/dc28cd5af45e87b7317a1f2eb934e54b90f40095add78dfd75920525ff7576e6 [none]
+[debug] [2021-01-10T11:49:30.565Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/react-quiz-ua/versions/ea69a601664f0f92/files/dc28cd5af45e87b7317a1f2eb934e54b90f40095add78dfd75920525ff7576e6 [stream]
+[debug] [2021-01-10T11:49:30.566Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/react-quiz-ua/versions/ea69a601664f0f92/files/d96ddbc4933b04e12c738ab39f469573143949ca2c39eda0a49d16f83d40c319 [none]
+[debug] [2021-01-10T11:49:30.566Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/react-quiz-ua/versions/ea69a601664f0f92/files/d96ddbc4933b04e12c738ab39f469573143949ca2c39eda0a49d16f83d40c319 [stream]
+[debug] [2021-01-10T11:49:30.567Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/react-quiz-ua/versions/ea69a601664f0f92/files/1dac6f3bc3e96d48829a70ab437fad770e1e3c4a272d1ba88730faacca864b45 [none]
+[debug] [2021-01-10T11:49:30.567Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/react-quiz-ua/versions/ea69a601664f0f92/files/1dac6f3bc3e96d48829a70ab437fad770e1e3c4a272d1ba88730faacca864b45 [stream]
+[debug] [2021-01-10T11:49:30.568Z] [hosting][populate queue][FINAL] {"max":1298,"min":1298,"avg":1298,"active":0,"complete":1,"success":1,"errored":0,"retried":0,"total":1,"elapsed":1324}
+[debug] [2021-01-10T11:49:30.569Z] [hosting] uploads queued: 18
+[debug] [2021-01-10T11:49:32.483Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/react-quiz-ua/versions/ea69a601664f0f92/files/3ee59515172ee198f3be375979df15ac5345183e656720a381b8872b2a39dc8b 200
+[debug] [2021-01-10T11:49:32.483Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/react-quiz-ua/versions/ea69a601664f0f92/files/3ee59515172ee198f3be375979df15ac5345183e656720a381b8872b2a39dc8b [stream]
+[debug] [2021-01-10T11:49:32.662Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/react-quiz-ua/versions/ea69a601664f0f92/files/d96ddbc4933b04e12c738ab39f469573143949ca2c39eda0a49d16f83d40c319 200
+[debug] [2021-01-10T11:49:32.663Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/react-quiz-ua/versions/ea69a601664f0f92/files/d96ddbc4933b04e12c738ab39f469573143949ca2c39eda0a49d16f83d40c319 [stream]
+[debug] [2021-01-10T11:49:32.868Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/react-quiz-ua/versions/ea69a601664f0f92/files/1dac6f3bc3e96d48829a70ab437fad770e1e3c4a272d1ba88730faacca864b45 200
+[debug] [2021-01-10T11:49:32.868Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/react-quiz-ua/versions/ea69a601664f0f92/files/1dac6f3bc3e96d48829a70ab437fad770e1e3c4a272d1ba88730faacca864b45 [stream]
+[debug] [2021-01-10T11:49:32.880Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/react-quiz-ua/versions/ea69a601664f0f92/files/2102e5fb8358ae62f194fde65ee9722cde2e52a9fea8ae8e259c7a0523c96980 200
+[debug] [2021-01-10T11:49:32.880Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/react-quiz-ua/versions/ea69a601664f0f92/files/2102e5fb8358ae62f194fde65ee9722cde2e52a9fea8ae8e259c7a0523c96980 [stream]
+[debug] [2021-01-10T11:49:32.891Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/react-quiz-ua/versions/ea69a601664f0f92/files/462ebc8aa2923782927af7d0230169a4f89c9ad417ffa351ead069e50a985782 200
+[debug] [2021-01-10T11:49:32.891Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/react-quiz-ua/versions/ea69a601664f0f92/files/462ebc8aa2923782927af7d0230169a4f89c9ad417ffa351ead069e50a985782 [stream]
+[debug] [2021-01-10T11:49:32.895Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/react-quiz-ua/versions/ea69a601664f0f92/files/2b6e3fa121eb137bca27e6e91888b7d6bd2cee00b32586ef1366abc0fa99b747 200
+[debug] [2021-01-10T11:49:32.895Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/react-quiz-ua/versions/ea69a601664f0f92/files/2b6e3fa121eb137bca27e6e91888b7d6bd2cee00b32586ef1366abc0fa99b747 [stream]
+[debug] [2021-01-10T11:49:32.902Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/react-quiz-ua/versions/ea69a601664f0f92/files/a7c799045f3ee2c65f7e63b54775b451811bd1805dcf54c03bf94d8b7f10b3bc 200
+[debug] [2021-01-10T11:49:32.902Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/react-quiz-ua/versions/ea69a601664f0f92/files/a7c799045f3ee2c65f7e63b54775b451811bd1805dcf54c03bf94d8b7f10b3bc [stream]
+[debug] [2021-01-10T11:49:32.914Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/react-quiz-ua/versions/ea69a601664f0f92/files/2f2a55efe81aed0236d4b20411b80353ac75fcf600f759f11c33f9dda78df462 200
+[debug] [2021-01-10T11:49:32.914Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/react-quiz-ua/versions/ea69a601664f0f92/files/2f2a55efe81aed0236d4b20411b80353ac75fcf600f759f11c33f9dda78df462 [stream]
+[debug] [2021-01-10T11:49:32.926Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/react-quiz-ua/versions/ea69a601664f0f92/files/a46954aa14a65ba47ed46cdbbfd5379c630401d96d534a2fa2f891badbc24198 200
+[debug] [2021-01-10T11:49:32.926Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/react-quiz-ua/versions/ea69a601664f0f92/files/a46954aa14a65ba47ed46cdbbfd5379c630401d96d534a2fa2f891badbc24198 [stream]
+[debug] [2021-01-10T11:49:32.940Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/react-quiz-ua/versions/ea69a601664f0f92/files/caebf00168cdb35b55fecb159f25f1fa30e558dbd9bbc01b77367c9b399788c0 200
+[debug] [2021-01-10T11:49:32.940Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/react-quiz-ua/versions/ea69a601664f0f92/files/caebf00168cdb35b55fecb159f25f1fa30e558dbd9bbc01b77367c9b399788c0 [stream]
+[debug] [2021-01-10T11:49:32.968Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/react-quiz-ua/versions/ea69a601664f0f92/files/2a5b25c878c7a5ac1ad4f989532c43e513c8c59787113133aee1f4e60221625b 200
+[debug] [2021-01-10T11:49:32.968Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/react-quiz-ua/versions/ea69a601664f0f92/files/2a5b25c878c7a5ac1ad4f989532c43e513c8c59787113133aee1f4e60221625b [stream]
+[debug] [2021-01-10T11:49:33.048Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/react-quiz-ua/versions/ea69a601664f0f92/files/bba62c5d2d97e5adf9ac4ca22bec585d19232118c8974150a0408ffa3a0165fa 200
+[debug] [2021-01-10T11:49:33.048Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/react-quiz-ua/versions/ea69a601664f0f92/files/bba62c5d2d97e5adf9ac4ca22bec585d19232118c8974150a0408ffa3a0165fa [stream]
+[debug] [2021-01-10T11:49:33.061Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/react-quiz-ua/versions/ea69a601664f0f92/files/e74b7d69e1bd7e0c6ad79c26aa209d81a6213d8092cc8c8c4027adfb51080977 200
+[debug] [2021-01-10T11:49:33.061Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/react-quiz-ua/versions/ea69a601664f0f92/files/e74b7d69e1bd7e0c6ad79c26aa209d81a6213d8092cc8c8c4027adfb51080977 [stream]
+[debug] [2021-01-10T11:49:33.092Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/react-quiz-ua/versions/ea69a601664f0f92/files/5a3c812de1329bdf391040ce0572d285abc5d55f63f31f4510cbb76893b34ef6 200
+[debug] [2021-01-10T11:49:33.092Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/react-quiz-ua/versions/ea69a601664f0f92/files/5a3c812de1329bdf391040ce0572d285abc5d55f63f31f4510cbb76893b34ef6 [stream]
+[debug] [2021-01-10T11:49:33.114Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/react-quiz-ua/versions/ea69a601664f0f92/files/ee7e2f3fdb8209c4b6fd7bef6ba50d1b9dba30a25bb5c3126df057e1cb6f5331 200
+[debug] [2021-01-10T11:49:33.115Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/react-quiz-ua/versions/ea69a601664f0f92/files/ee7e2f3fdb8209c4b6fd7bef6ba50d1b9dba30a25bb5c3126df057e1cb6f5331 [stream]
+[debug] [2021-01-10T11:49:33.199Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/react-quiz-ua/versions/ea69a601664f0f92/files/dc28cd5af45e87b7317a1f2eb934e54b90f40095add78dfd75920525ff7576e6 200
+[debug] [2021-01-10T11:49:33.199Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/react-quiz-ua/versions/ea69a601664f0f92/files/dc28cd5af45e87b7317a1f2eb934e54b90f40095add78dfd75920525ff7576e6 [stream]
+[debug] [2021-01-10T11:49:33.224Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/react-quiz-ua/versions/ea69a601664f0f92/files/bfe106a3fb878dc83461c86818bf74fc1bdc7f28538ba613cd3e775516ce8b49 200
+[debug] [2021-01-10T11:49:33.224Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/react-quiz-ua/versions/ea69a601664f0f92/files/bfe106a3fb878dc83461c86818bf74fc1bdc7f28538ba613cd3e775516ce8b49 [stream]
+[debug] [2021-01-10T11:49:33.278Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/react-quiz-ua/versions/ea69a601664f0f92/files/aff3449bdc238776f5d6d967f19ec491b36aed5fb7f23ccff6500736fd58494a 200
+[debug] [2021-01-10T11:49:33.278Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/react-quiz-ua/versions/ea69a601664f0f92/files/aff3449bdc238776f5d6d967f19ec491b36aed5fb7f23ccff6500736fd58494a [stream]
+[debug] [2021-01-10T11:49:33.278Z] [hosting][upload queue][FINAL] {"max":2736,"min":1941,"avg":2423.3333333333335,"active":0,"complete":18,"success":18,"errored":0,"retried":0,"total":18,"elapsed":2740}
+[info] +  hosting[react-quiz-ua]: file upload complete 
+[debug] [2021-01-10T11:49:33.279Z] [hosting] deploy completed after 4220ms
+[debug] [2021-01-10T11:49:33.406Z] [
+  {
+    "config": {
+      "public": "build",
+      "ignore": [
+        "firebase.json",
+        "**/.*",
+        "**/node_modules/**"
+      ],
+      "rewrites": [
+        {
+          "source": "**",
+          "destination": "/index.html"
+        }
+      ],
+      "site": "react-quiz-ua"
+    },
+    "site": "react-quiz-ua",
+    "version": "sites/react-quiz-ua/versions/ea69a601664f0f92"
+  }
+]
+[info] i  hosting[react-quiz-ua]: finalizing version... 
+[debug] [2021-01-10T11:49:33.409Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2021-01-10T11:49:33.410Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2021-01-10T11:49:33.554Z] <<< HTTP RESPONSE 200 {"date":"Sun, 10 Jan 2021 11:49:29 GMT","pragma":"no-cache","expires":"Mon, 01 Jan 1990 00:00:00 GMT","cache-control":"no-cache, no-store, max-age=0, must-revalidate","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-01-10T11:49:33.560Z] >>> HTTP REQUEST PATCH https://firebasehosting.googleapis.com/v1beta1/sites/react-quiz-ua/versions/ea69a601664f0f92?updateMask=status  
+ {"status":"FINALIZED"}
+[debug] [2021-01-10T11:49:34.629Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Sun, 10 Jan 2021 11:49:30 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-01-10T11:49:34.630Z] [hosting] finalized version for react-quiz-ua: {"name":"sites/react-quiz-ua/versions/ea69a601664f0f92","status":"FINALIZED","config":{"rewrites":[{"glob":"**","path":"/index.html"}]},"labels":{"deployment-tool":"cli-firebase"},"createTime":"2021-01-10T11:49:23.895866Z","createUser":{"email":"zetronik@gmail.com"},"finalizeTime":"2021-01-10T11:49:30.456854Z","finalizeUser":{"email":"zetronik@gmail.com"}}
+[info] +  hosting[react-quiz-ua]: version finalized 
+[info] i  hosting[react-quiz-ua]: releasing new version... 
+[debug] [2021-01-10T11:49:34.633Z] >>> HTTP REQUEST POST https://firebasehosting.googleapis.com/v1beta1/sites/react-quiz-ua/releases?version_name=sites/react-quiz-ua/versions/ea69a601664f0f92  
+ {"message":null}
+[debug] [2021-01-10T11:49:35.643Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Sun, 10 Jan 2021 11:49:31 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-01-10T11:49:35.644Z] [hosting] release: {"name":"sites/react-quiz-ua/releases/1610279370818918","version":{"name":"sites/react-quiz-ua/versions/ea69a601664f0f92","status":"FINALIZED","config":{"rewrites":[{"glob":"**","path":"/index.html"}]},"labels":{"deployment-tool":"cli-firebase"},"createTime":"2021-01-10T11:49:23.895866Z","createUser":{"email":"zetronik@gmail.com"},"finalizeTime":"2021-01-10T11:49:30.456854Z","finalizeUser":{"email":"zetronik@gmail.com"},"preview":{}},"type":"DEPLOY","releaseTime":"2021-01-10T11:49:30.818918121Z","releaseUser":{"email":"zetronik@gmail.com"}}
+[info] +  hosting[react-quiz-ua]: release complete 
+[info] 
+[info] +  Deploy complete! 
+[info] 
+[info] Project Console: https://console.firebase.google.com/project/react-quiz-ua/overview
+[info] Hosting URL: https://react-quiz-ua.web.app
+[debug] [2021-01-10T11:49:35.769Z] Error: EPERM: operation not permitted, unlink 'D:\project\react1\react-quiz\firebase-debug.log'
+    at Object.unlinkSync (node:fs:1225:3)
+    at process.<anonymous> (C:\Users\zetro\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js:89:12)
+    at process.emit (node:events:341:22)
+    at process.exit (node:internal/process/per_thread:174:15)
+    at C:\Users\zetro\AppData\Roaming\npm\node_modules\firebase-tools\lib\command.js:81:74
+    at processTicksAndRejections (node:internal/process/task_queues:93:5)
+[error] 
+[error] Error: An unexpected error has occurred.
